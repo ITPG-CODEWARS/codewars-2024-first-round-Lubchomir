@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="Favikon.png" sizes="32x32" type="image/png"><!--Favicon-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--Responsive за мобилни устройства-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Jacobite</title><!--Заглавие на страницата-->
+    <link rel="stylesheet" href="additionalStyle3.css"/><!--Линк към Css-->
+    </head>
+    <body>
+      <div class="container2">
+        <!--Лява стрелка-->
+          <div class="arrow l" onclick="prev()">
+            <img src="L.png" alt="L">
+          </div>
+
+          <!--Първи слайд-->
+          <div class="slide slide-1">
+            <div class="caption">
+                <h3>The Jacobite</h3>
+                <p> <mark >The Jacobite is a steam locomotive-hauled tourist train service that operates over part of the West Highland Line in Scotland. It has been operating under various names and with different operators every summer since 1984. It has played an important role in sustaining a scenic route</mark</p>
+            </div>
+          </div>
+
+          <!--Втори слайд-->
+          <div class="slide slide-2">
+            <div class="caption">
+                <h3>Route</h3>
+                <p><mark>The Jacobite runs a distance of 41 miles (66 km) between Fort William and Mallaig, passing through an area of great scenic beauty including alongside Loch Eil, Glenfinnan Viaduct and Arisaig. Trains cross with regular service trains at Glenfinnan station. </mark></p>
+            </div>
+          </div>
+
+          <!--Трети слайд-->
+          <div class="slide slide-3">
+              <div class="caption">
+                  <h3>Carriages</h3>
+                  <p> <mark>The carriages have all been of the British Railways Mark 1 type, initially owned by British Rail and painted blue and grey, but now owned by WCR and painted in an approximation of British Rail Maroon with vacuum brakes. For the afternoon service an air braked set of British Railways Mark 2 carriages are also based in Fort William.</mark>
+                  </p>
+              </div>
+          </div>
+
+          <!--Дясна стрелка-->
+          <div class="arrow r" onclick="next()">
+            <img src="R.png" alt="R">
+          </div>  
+      </div>
+
+      <script>
+        // Взема всички слайдове и задава началния индекс на слайда
+        let slide = document.querySelectorAll('.slide');
+        var current = 0;
+    
+        // Скрива всички слайдове
+        function cls() {
+            for (let i = 0; i < slide.length; i++) {
+                slide[i].style.display = 'none';
+            }
+        }
+    
+        // Показва следващия слайд
+        function next() {
+            cls();
+            if (current === slide.length - 1) current = -1; // Връща се към началото
+            current++;
+            slide[current].style.display = 'block';
+        }
+    
+        // Показва предишния слайд
+        function prev() {
+            cls();
+            if (current === 0) current = slide.length; // Връща се към края
+            current--;
+            slide[current].style.display = 'block';
+        }
+    
+        // Показва първия слайд при зареждане на страницата
+        function start() {
+            cls();
+            slide[current].style.display = 'block';
+        }
+    
+        start();
+    </script> 
+    </body>
+    </html>

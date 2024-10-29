@@ -1,0 +1,105 @@
+body {
+  margin: 0%;
+    
+  }
+  h1{
+    font-family: Poppins;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+    font-weight: 500 ;
+  }
+  main{
+    font-family: Poppins;
+    margin: 30px;
+  }
+  .train-content {
+    position: absolute;
+    color: white;
+    padding: 24px;
+    top: 33%;
+    font-family: Verdana;
+    }
+    .train-content p{
+      color: #ffffff99;
+      
+    }
+    .train-content h3{
+      font-size: x-large;
+      text-shadow: 2px 2px 20px
+      ;
+      color: #ffffffe6;
+    }
+    
+    
+  .container {
+  margin: 200 0 0 200;
+  width: -50px;
+  display: grid;
+  grid-template-columns: repeat(4.1fr);
+  align-items: center;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  }
+  
+  
+  .container img{
+  width: 350px;
+  height: 500px;
+  object-fit:cover;
+  background-size: cover;
+  background-position: center;
+  inset: 0;
+filter: brightness(.75) saturate(1.2) contrast(.85) ;
+  cursor: pointer;
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 1px; 
+  border-color: rgb(0, 0, 0);
+  border: 2px rgba(255, 255, 255 0.684);
+  transition: all ease-in-out 0.7s;
+  }
+  
+
+  .container img:hover {
+    width: 450px
+}
+ .navbar ul{
+    list-style-type:none;
+    background-color: #426694;
+    padding: 0px;
+    margin: 0px;
+    overflow:hidden;
+    height: 80px;
+ }
+ .navbar a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 25px;
+    display: block;
+    text-align: center;
+    height: 80px;
+ }
+ .navbar a:hover{
+    background-color: #224675;
+ }
+ .navbar li{
+  float:left
+ }
+h2{
+  margin: 2px;
+}
+body{
+  background-color:#d2dcf1;
+}
+
+
+
+
+
+
+
+
+
